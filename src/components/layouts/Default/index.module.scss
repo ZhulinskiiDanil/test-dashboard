@@ -1,0 +1,13 @@
+.defaultLayout {
+  display: flex;
+  min-height: 100dvh;
+
+  .dashboard {
+    flex-shrink: 0;
+  }
+
+  .content {
+    width: 100%;
+    padding: 2.56rem 4.44rem;
+  }
+}

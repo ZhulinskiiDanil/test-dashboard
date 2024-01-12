@@ -1,0 +1,52 @@
+.customer {
+  display: flex;
+  padding: 1.5rem 0;
+  color: #292D32;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.00875rem;
+  border-bottom: .0625rem solid #eee;
+
+  .cell {
+    display: flex;
+    word-break: break-word;
+    
+    .status {
+      flex-shrink: 0;
+      display: flex;
+      width: 5rem;
+      height: min-content;
+      padding: 0.2rem 0.75rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      border: {
+        width: 1px;
+        style: solid;
+      };
+  
+      word-break: normal;
+      border-radius: 0.25rem;
+  
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.00875rem;
+  
+      &.active {
+        color: #008767;
+        border-color: #00B087;
+        background: rgba(22, 192, 152, 0.38);
+      }
+  
+      &.inactive {
+        color: #DF0404;
+        border-color: #DF0404;
+        background: #FFC5C5;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  button.button {
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    outline: none;
+    border-radius: 0.25rem;
+    border: 1px solid #EEE;
+    background: #F5F5F5;
+    cursor: pointer;
+
+    color: #404B52;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 0.75rem */
+    letter-spacing: -0.0075rem;
+
+    &.active {
+      color: #fff;
+      border-radius: 0.25rem;
+      border: 1px solid #5932EA;
+      background: #5932EA;
+    }
+
+    &.dots {
+      color: #404B52;
+      background: none;
+      border: none;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use 'normalize.css';
+@use './fonts.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+  // Fix grid and flex blocks
+  min-width: 0;
+  min-height: 0;
+}
+
+html,
+body {
+  background: #FAFBFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

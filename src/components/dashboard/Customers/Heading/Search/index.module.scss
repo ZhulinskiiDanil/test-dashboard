@@ -1,0 +1,40 @@
+label.search {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  width: 13.5rem;
+  padding: .44rem .5rem;
+  border-radius: 0.625rem;
+  background: #F9FBFF;
+  border: 1px solid transparent;
+  transition: .15s ease;
+  cursor: text;
+
+  &:has(input:focus) {
+    border-color: #eee;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: -0.0075rem;
+
+    &:placeholder {
+      color: #B5B7C0;
+    }
+
+    background: none;
+    border: none;
+    outline: none;
+  }
+}
